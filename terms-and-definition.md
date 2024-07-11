@@ -52,7 +52,7 @@
 | Child doesn't have their own life cycle. | Child can have their own life time. |
 | Strong association. | Weak association. |
 
-# WEEK 4 - `friend` Function, `friend` Class, Copy Constructor, `this` Pointer, Operator Overloading
+# WEEK 4 - 5 - `friend` Function, `friend` Class, Copy Constructor, `this` Pointer, Operator Overloading
 | Terms | Definition |
 |-------|------------|
 | Instance variable                   | A member variable in a class. |
@@ -73,4 +73,8 @@
 | Need object name and . to access private variables. | Directly access private variables. |
 | Can be declared in public or private. | Only declared in public. |
 
-# 
+# WEEK 6 - Pointers & Dynamic Variables
+| Terms | Definition |
+|-------|------------|
+| Pointer variable                    | Special variable that holds a memory address. |
+| Reference variable                  | An alias / alternative name to an existing variable. |
