@@ -4,10 +4,11 @@
 #include <iostream>
 using namespace std;
 
+template <class T>
 class SinglyLinkedList {
   private:
     struct Node {
-      int val;
+      T val;
       Node * next;
     };
     Node * head;
@@ -17,9 +18,9 @@ class SinglyLinkedList {
 
     void displayList();
 
-    void appendNode(int val);
-    void insertNode(int val);
-    void deleteNode(int val);
+    void appendNode(T val);
+    void insertNode(T val);
+    void deleteNode(T val);
 };
 
 #endif

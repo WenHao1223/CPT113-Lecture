@@ -1,10 +1,12 @@
 #include "SinglyLinkedList.h"
 
-SinglyLinkedList::SinglyLinkedList () {
+template <class T>
+SinglyLinkedList<T>::SinglyLinkedList () {
   head = nullptr;
 }
 
-SinglyLinkedList::~SinglyLinkedList () {
+template <class T>
+SinglyLinkedList<T>::~SinglyLinkedList () {
   Node * nodePtr = nullptr;
 
   while (head) {
@@ -14,7 +16,8 @@ SinglyLinkedList::~SinglyLinkedList () {
   }
 }
 
-void SinglyLinkedList::displayList () {
+template <class T>
+void SinglyLinkedList<T>::displayList () {
   Node * nodePtr = nullptr;
 
   if (!head) {
@@ -29,7 +32,8 @@ void SinglyLinkedList::displayList () {
   }
 }
 
-void SinglyLinkedList::appendNode (int val) {
+template <class T>
+void SinglyLinkedList<T>::appendNode (T val) {
   Node * newNode = nullptr,
     * nodePtr = nullptr;
 
@@ -50,7 +54,8 @@ void SinglyLinkedList::appendNode (int val) {
   }
 }
 
-void SinglyLinkedList::insertNode (int val) {
+template <class T>
+void SinglyLinkedList<T>::insertNode (T val) {
   Node * newNode = nullptr,
     * nodePtr = nullptr,
     * prevNode = nullptr;
@@ -82,7 +87,8 @@ void SinglyLinkedList::insertNode (int val) {
   }
 }
 
-void SinglyLinkedList::deleteNode (int val) {
+template <class T>
+void SinglyLinkedList<T>::deleteNode (T val) {
   Node * nodePtr = nullptr,
     * prevNode = nullptr;
 
@@ -111,3 +117,10 @@ void SinglyLinkedList::deleteNode (int val) {
     cout << "List is empty." << endl;
   }
 }
+
+template class SinglyLinkedList <int>;
+template class SinglyLinkedList <short>;
+template class SinglyLinkedList <float>;
+template class SinglyLinkedList <double>;
+template class SinglyLinkedList <char>;
+template class SinglyLinkedList <string>;

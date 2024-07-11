@@ -4,7 +4,7 @@ using namespace std;
 #include "SinglyLinkedList.h"
 
 int main () {
-  SinglyLinkedList linkedList;
+  SinglyLinkedList<int> linkedList;
 
   // display empty linked list
   linkedList.displayList();
