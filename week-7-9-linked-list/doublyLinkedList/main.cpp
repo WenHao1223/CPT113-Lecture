@@ -1,3 +1,5 @@
+// g++ *.cpp -o main && main
+
 #include <iostream>
 using namespace std;
 

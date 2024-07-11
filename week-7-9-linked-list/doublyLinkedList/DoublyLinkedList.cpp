@@ -6,14 +6,12 @@ DoublyLinkedList::DoublyLinkedList () {
 }
 
 DoublyLinkedList::~DoublyLinkedList () {
-  Node *nodePtr = nullptr,
-    *temp = nullptr;
+  Node *nodePtr = nullptr;
 
-  nodePtr = head;
-  while (nodePtr) {
-    temp = nodePtr->next;
-    delete nodePtr;
-    head = temp;
+  while (head) {
+    nodePtr = head->next;
+    delete head;
+    head = nodePtr;
   }
 }
 
