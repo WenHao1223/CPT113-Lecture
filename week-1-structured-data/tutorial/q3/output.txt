@@ -1,0 +1,22 @@
+====== CHARACTER 1======
+Name: San
+Skill: Heal
+=========================
+====== CHARACTER 2======
+Name: Mukuda
+Skill: Gourmet
+=========================
+====== CHARACTER 3======
+Name: Tamaru
+Skill: Sword
+=========================
+====== CHARACTER 4======
+Name: Sonoko
+Skill: Imagine
+=========================
+======== OUTPUT =========
+San - Heal
+Mukuda - Gourmet
+Tamaru - Sword
+Sonoko - Imagine
+=========================

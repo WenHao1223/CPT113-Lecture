@@ -1,0 +1,6 @@
+Enter the sales for day MONDAY: 100
+Enter the sales for day TUEDAY: 200
+Enter the sales for day WEDNESDAY: 300
+Enter the sales for day THURSDAY: 400
+Enter the sales for day FRIDAY: 500
+The total sales are $1500.00

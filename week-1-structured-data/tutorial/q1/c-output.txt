@@ -1,0 +1,77 @@
+======= INPUT STUDENT 1 INFO =======
+Name: s1
+ID: 1
+Desasiswa: 1
+Year: 1
+Semester: 1
+CGPA: 1
+==================================================
+======= INPUT STUDENT 2 INFO =======
+Name: s2
+ID: 2
+Desasiswa: 2
+Year: 2
+Semester: 2
+CGPA: 2
+==================================================
+======= INPUT STUDENT 3 INFO =======
+Name: s3
+ID: 3
+Desasiswa: 3
+Year: 3
+Semester: 3
+CGPA: 3
+==================================================
+======= INPUT STUDENT 4 INFO =======
+Name: s4
+ID: 4
+Desasiswa: 4
+Year: 4
+Semester: 4
+CGPA: 4
+==================================================
+======= INPUT STUDENT 5 INFO =======
+Name: s5
+ID: 5
+Desasiswa: 5
+Year: 5
+Semester: 5
+CGPA: 5
+==================================================
+=========== OUTPUT HERE ===========
+STUDENT 1 INFO
+Name: s1
+ID: 1
+Desasiswa: 1
+Year: 1
+Semester: 1
+CGPA: 1
+STUDENT 2 INFO
+Name: s2
+ID: 2
+Desasiswa: 2
+Year: 2
+Semester: 2
+CGPA: 2
+STUDENT 3 INFO
+Name: s3
+ID: 3
+Desasiswa: 3
+Year: 3
+Semester: 3
+CGPA: 3
+STUDENT 4 INFO
+Name: s4
+ID: 4
+Desasiswa: 4
+Year: 4
+Semester: 4
+CGPA: 4
+STUDENT 5 INFO
+Name: s5
+ID: 5
+Desasiswa: 5
+Year: 5
+Semester: 5
+CGPA: 5
+===================================

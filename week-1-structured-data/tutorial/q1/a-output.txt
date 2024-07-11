@@ -1,0 +1,14 @@
+Name: Wen Hao
+ID: 123
+Desasiswa: Tekun
+Year: 2024
+Semester: 2
+CGPA: 4
+=========== OUTPUT HERE ===========
+Name: Wen Hao
+ID: 123
+Desasiswa: Tekun
+Year: 2024
+Semester: 2
+CGPA: 4
+===================================

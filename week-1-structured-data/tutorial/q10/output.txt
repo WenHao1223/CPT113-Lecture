@@ -1,0 +1,13 @@
+h - hourly paid worker; s - salaried worker
+h / w ? h
+Hourly worked (hour(s)) : 10
+Hourly rate : 7.5
+Paid RM 75.00
+
+------------------------------------------------------------------------
+
+h - hourly paid worker; s - salaried worker
+h / w ? w
+Salary (RM) : 50
+Bonus (RM) : 30
+Paid RM 80.00
