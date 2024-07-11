@@ -78,3 +78,9 @@
 |-------|------------|
 | Pointer variable                    | Special variable that holds a memory address. |
 | Reference variable                  | An alias / alternative name to an existing variable. |
+
+# WEEK 7 - Templates & Linked Lists
+| Terms | Definition |
+|-------|------------|
+| Function template                   | A "generic" function that can work with any data type. |
+| Linked list                         | A set of data structures (nodes) that contain references to other data structures. |
