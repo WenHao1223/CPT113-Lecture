@@ -72,3 +72,5 @@
 | Cannot be called using object of the class. | Need objects to call function: `obj.func()`. |
 | Need object name and . to access private variables. | Directly access private variables. |
 | Can be declared in public or private. | Only declared in public. |
+
+# 
