@@ -1,3 +1,21 @@
 WEEK 1 - Structured Data
 Abstract Data Types   A data type that specifies values that can be stored and operations that can be done on the values.
 Abstraction           A definition that captures general characteristics without details.
+
+WEEK 2 - Introduction to Classes
+Procedural programming    Focuses on the process / actions that occur in a program.
+Object-oriented programming   Based on the data and the functions that operate.
+Object                Instance of ADTs that represent the data and its functions.
+Attribute             Member of a class.
+Method / behaviour    Member function of a a class.
+Data hiding           Restricting access to certain members of an object.
+Public interface      Mmebers of an object that are available outside of the class.
+Mutator               A member function that stores a value in a private member variable, or changes its value in some way.
+Accessor              Function that retrieves a value from a private member variable.
+Class specification file (.h)   Header fle that places class declaration.
+Constructor           Member function that is automatically called when an object is created.
+In-place initialization   Initialize a member variable in declaration statement (>= C++11).
+Default Constructor   Constructor that takes no arguments.
+Destructor            Member function that is automatically called when an object is destroyed.
+Constructor delegation    Calling of an constructor to another constructor in the same class.
+Unified Modelling Language (UML)    Provides a set of standard diagrams for graphically depicting object-oriented systems.
