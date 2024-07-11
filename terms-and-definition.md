@@ -33,7 +33,7 @@
 | Encapsulation                       | Combines data and operations on data in a single unit. |
 | Inheritance                         | Creates new objects (classes) from existing objects (classes). |
 | Polymorphism                        | The ability to use the same expression to denote different operations. |
-| Aggregation                         | A class is a member of a class.
+| Aggregation                         | A class is a member of a class. |
 
 ## Polymorphism vs Overloading
 | Polymorphism | Overloading |
@@ -51,3 +51,24 @@
 | UML denoted by a filled diamond. | UML denoted by an empty diamond. |
 | Child doesn't have their own life cycle. | Child can have their own life time. |
 | Strong association. | Weak association. |
+
+# WEEK 4 - `friend` Function, `friend` Class, Copy Constructor, `this` Pointer, Operator Overloading
+| Terms | Definition |
+|-------|------------|
+| Instance variable                   | A member variable in a class. |
+| `static` variable                   | One variable shared among all objects of a class. |
+| `static` member function            | Used to access `static` member variable. |
+| Friend                              | A function or class that is not a member of a class, but has access to private members of the class. |
+| Copy constructor                    | Special constructor used when a newly created object is initialized to the data of another object of same class. |
+| `this`                              | Predefined pointer available to a class's member functions that always points to the instance (object) of the class whose function is being called. |
+| lvalues                             | Values that persist beyond the statement that created them, and have names that make them accessible to other statements in the program. |
+| rvalues                             | Values that are temporary, and cannot be accessed beyond the statement that created them. |
+| Rvalue reference                    | A reference variable that can refer only to temporary objects that would otherwise have no name. |
+
+## `friend` function vs normal function
+| `friend` function | normal function |
+|-------|------------|
+| Not in the scope of the class. | In the scope of the class. |
+| Cannot be called using object of the class. | Need objects to call function: `obj.func()`. |
+| Need object name and . to access private variables. | Directly access private variables. |
+| Can be declared in public or private. | Only declared in public. |
