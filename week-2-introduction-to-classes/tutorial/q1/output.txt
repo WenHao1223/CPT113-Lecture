@@ -1,0 +1,16 @@
+Name: Wen Hao
+ID: 123
+Desasiswa: Tekun
+Year: 2024
+Sem: 2
+CGPA: 3.91
+
+Name: Ali
+ID: 124
+Desasiswa: Restu
+Year: 2023
+Sem: 1
+CGPA: 3.2
+
+Name of s1: Wen Hao
+Name of s2: Ali
