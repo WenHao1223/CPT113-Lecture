@@ -1,0 +1,3 @@
+WEEK 1 - Structured Data
+Abstract Data Types   A data type that specifies values that can be stored and operations that can be done on the values.
+Abstraction           A definition that captures general characteristics without details.
