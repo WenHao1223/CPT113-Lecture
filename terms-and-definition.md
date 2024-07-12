@@ -84,3 +84,9 @@
 |-------|------------|
 | Function template                   | A "generic" function that can work with any data type. |
 | Linked list                         | A set of data structures (nodes) that contain references to other data structures. |
+
+# WEEK 10 - Stack & Queue
+| Terms | Definition |
+|-------|------------|
+| Stack                               | A data structure that stores and retrives items in a Last-In-First-Out (LIFO) manner. |
+| Queue                               | A data structure that stores and retrives items in a First-In-First-Out (FIFO) manner. |
