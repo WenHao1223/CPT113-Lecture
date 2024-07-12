@@ -90,3 +90,17 @@
 |-------|------------|
 | Stack                               | A data structure that stores and retrives items in a Last-In-First-Out (LIFO) manner. |
 | Queue                               | A data structure that stores and retrives items in a First-In-First-Out (FIFO) manner. |
+
+# WEEK 11 - Recursion
+| Terms | Definition |
+|-------|------------|
+| Inflix notation                     | The usual notations to write arithmetic expressions. |
+| Prefix / Polish notation            | The notations in which operators are written before operands where parentheses can be eliminated. |
+| Postfix / Reversed Polish notation  | The notations in which operators are written after the operands. |
+
+## Recursive algorithm vs iterative algorithm
+| Recursive algorithm | Iterative algorithm |
+|-------|------------|
+| Problem is solved recursively by **breaking down** into successive smaller problems taht are identical to the overall problem. | Problem is solved iteratively with a **loop**.
+| Less efficient. <br> Function calls impose overhead to the system. <br> Allocating memory for parameters and local variables. <br> Storing the address of the program location where control returns after the function terminates. | More efficient. |
+| Programmer can design recursive algorithm faster. Some repetitive problems are easier to solved. | Slower to design. |
