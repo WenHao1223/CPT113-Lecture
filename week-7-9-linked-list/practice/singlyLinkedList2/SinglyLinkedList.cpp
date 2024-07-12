@@ -8,13 +8,11 @@ SinglyLinkedList<T>::SinglyLinkedList () {
 template <class T>
 SinglyLinkedList<T>::~SinglyLinkedList () {
   Node * nodePtr = nullptr;
-  if (head) {
-    nodePtr = head;
-    while (nodePtr) {
-      nodePtr = head->next;
-      delete head;
-      head = nodePtr;
-    }
+
+  while (head) {
+    nodePtr = head->next;
+    delete head;
+    head = nodePtr;
   }
 }
 

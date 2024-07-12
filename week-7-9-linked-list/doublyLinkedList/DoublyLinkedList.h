@@ -21,6 +21,9 @@ class DoublyLinkedList {
     void appendNode(int);
     void insertNode(int);
     void deleteNode(int);
+
+    int getHead() const;
+    int getTail() const;
 };
 
 #endif

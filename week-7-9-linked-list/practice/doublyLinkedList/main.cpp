@@ -6,7 +6,7 @@ using namespace std;
 #include "DoublyLinkedList.h"
 
 int main () {
-  DoublyLinkedList linkedList;
+  DoublyLinkedList<int> linkedList;
 
   // display empty linked list
   linkedList.displayList();
