@@ -11,16 +11,18 @@ Queue<T>::Queue(int s) {
 
 template <class T>
 Queue<T>::Queue (const Queue & obj) {
-  queueArray = new T [obj.queueSize];
+  if (obj.queueSize > 0)
+    queueArray = new T [obj.queueSize];
+  else
+    queueArray = nullptr;
   
   queueSize = obj.queueSize;
   front = obj.front;
   rear = obj.rear;
   numItems = obj.numItems;
 
-  for (int count = 0; count < obj.queueSize; count++) {
+  for (int count = 0; count < obj.queueSize; count++)
     queueArray[count] = obj.queueArray[count];
-  }
 }
 
 template <class T>
