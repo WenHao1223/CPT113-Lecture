@@ -13,7 +13,7 @@
 | Attribute                         | Member of a class. |
 | Method / behaviour                | Member function of a a class. |
 | Data hiding                       | Restricting access to certain members of an object. |
-| Public interface                  | Mmebers of an object that are available outside of the class. |
+| Public interface                  | Members of an object that are available outside of the class. |
 | Mutator                           | A member function that stores a value in a private member variable, or changes its value in some way. |
 | Accessor                          | Function that retrieves a value from a private member variable. |
 | Class specification file (.h)     | Header fle that places class declaration. |
