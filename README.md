@@ -104,3 +104,18 @@
 | Problem is solved recursively by **breaking down** into successive smaller problems taht are identical to the overall problem. | Problem is solved iteratively with a **loop**.
 | Less efficient. <br> Function calls impose overhead to the system. <br> Allocating memory for parameters and local variables. <br> Storing the address of the program location where control returns after the function terminates. | More efficient. |
 | Programmer can design recursive algorithm faster. Some repetitive problems are easier to solved. | Slower to design. |
+
+# WEEK 14 - Binary Trees
+| Terms | Definition |
+|-------|------------|
+| Binary tree                         | A nonlinear linked list in which each node may point to 0, 1, or two other nodes, with each node contains one or more data fields and two pointers. |
+| Tree pointer                        | A head pointer for a linked list, pointing to the first node in the binary tree. |
+| Root node                           | The node at the top of the tree. |
+| Leaf node                           | Nodes that have no children. |
+| Child node / children               | Nodes below a given node. |
+| Parent node                         | Node above a given node. |
+| Subtree                             | The portion of a tree from a node down to the leaves. |
+| Leaf                                | Node that has no left and right children. |
+| Length of path                      | Number of branches on path. |
+| Level of node                       | Number of branches on the path from the root to the node (start from 0). |
+| Height of binary tree               | Number of nodes on the longest path from the root to a leaf. |
