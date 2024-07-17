@@ -1,15 +1,15 @@
 #include "DoublyLinkedList.h"
 
-DoublyLinkedList::DoublyLinkedList () {
+DoublyLinkedList::DoublyLinkedList() {
   head = nullptr;
   tail = nullptr;
 }
 
-DoublyLinkedList::~DoublyLinkedList () {
-  Node *nodePtr = nullptr;
+DoublyLinkedList::~DoublyLinkedList() {
+  Node * nodePtr = nullptr;
 
   while (head) {
-    nodePtr = head->next;
+    nodePtr = nodePtr->next;
     delete head;
     head = nodePtr;
   }
@@ -18,8 +18,8 @@ DoublyLinkedList::~DoublyLinkedList () {
   tail = nullptr;
 }
 
-void DoublyLinkedList::displayList () {
-  Node *nodePtr = nullptr;
+void DoublyLinkedList::displayList () const {
+  Node * nodePtr = nullptr;
 
   if (head) {
     nodePtr = head;
@@ -28,50 +28,50 @@ void DoublyLinkedList::displayList () {
       nodePtr = nodePtr->next;
     }
   } else {
-    cout << "Linked list is empty" << endl;
+    cout << "List is empty" << endl;
   }
-
 }
 
 void DoublyLinkedList::appendNode (int num) {
-  Node *newNode = nullptr,
-    *nodePtr = nullptr;
+  Node * newNode = nullptr;
   newNode = new Node;
   newNode->val = num;
   newNode->prev = nullptr;
   newNode->next = nullptr;
 
   if (head) {
+    Node * nodePtr = nullptr;
     nodePtr = head;
-    while (nodePtr->next) {
+
+    while (nodePtr->next)
       nodePtr = nodePtr->next;
-    }
-    nodePtr->next = newNode;
+
     newNode->prev = nodePtr;
-    tail = newNode;
+    nodePtr->next = newNode;
   } else {
-    // list is empty
     head = newNode;
-    tail = newNode;
   }
+
+  tail = newNode;
 }
 
 void DoublyLinkedList::insertNode (int num) {
-  Node *newNode = nullptr,
-    *nodePtr = nullptr;
-
+  Node * newNode = nullptr;
   newNode = new Node;
   newNode->val = num;
   newNode->prev = nullptr;
   newNode->next = nullptr;
 
   if (head) {
+    Node * nodePtr = nullptr;
     nodePtr = head;
-    while (nodePtr->next && nodePtr->val < num)
+
+    while (nodePtr->next && nodePtr->val < num) {
       nodePtr = nodePtr->next;
+    }
 
     if (nodePtr == head) {
-      // insert at head
+      // append at the head
       newNode->next = head;
       head->prev = newNode;
       head = newNode;
@@ -81,34 +81,31 @@ void DoublyLinkedList::insertNode (int num) {
       tail->next = newNode;
       tail = newNode;
     } else {
-      // insert at middle
       nodePtr->prev->next = newNode;
       newNode->prev = nodePtr->prev;
       newNode->next = nodePtr;
       nodePtr->prev = newNode;
     }
   } else {
-    // list is empty
     head = newNode;
     tail = newNode;
   }
 }
 
 void DoublyLinkedList::deleteNode (int num) {
-  Node *nodePtr = nullptr;
+  Node * nodePtr = nullptr;
 
   if (head) {
     if (head->val == num) {
-      // node to delete is head
       nodePtr = head->next;
       nodePtr->prev = nullptr;
       delete head;
       head = nodePtr;
     } else {
       nodePtr = head;
-      // node to delete is at the middle / last
-      while (nodePtr && nodePtr->val != num)
+      while (nodePtr && nodePtr->val < num) {
         nodePtr = nodePtr->next;
+      }
 
       if (nodePtr) {
         nodePtr->prev->next = nodePtr->next;
@@ -118,14 +115,12 @@ void DoublyLinkedList::deleteNode (int num) {
         cout << "Not found." << endl;
       }
     }
-
   } else {
-    cout << "Linked list is empty." << endl;
+    cout << "List is empty" << endl;
   }
 }
 
-
-int DoublyLinkedList::getHead() const {
+int DoublyLinkedList::getHead () const {
   if (head) {
     return head->val;
   } else {
@@ -133,7 +128,7 @@ int DoublyLinkedList::getHead() const {
   }
 }
 
-int DoublyLinkedList::getTail() const {
+int DoublyLinkedList::getTail () const {
   if (tail) {
     return tail->val;
   } else {
