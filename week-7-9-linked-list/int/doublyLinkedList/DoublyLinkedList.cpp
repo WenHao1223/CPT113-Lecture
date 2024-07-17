@@ -101,7 +101,6 @@ void DoublyLinkedList::deleteNode (int num) {
     if (head->val == num) {
       // node to delete is head
       nodePtr = head->next;
-      nodePtr->prev = nullptr;
       delete head;
       head = nodePtr;
     } else {
