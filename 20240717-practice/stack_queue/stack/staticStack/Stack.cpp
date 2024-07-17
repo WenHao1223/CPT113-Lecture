@@ -21,7 +21,7 @@ Stack::Stack (const Stack & obj) {
 }
 
 Stack::~Stack () {
-  delete stackArray;
+  delete [] stackArray;
 }
 
 void Stack::push (int num) {
