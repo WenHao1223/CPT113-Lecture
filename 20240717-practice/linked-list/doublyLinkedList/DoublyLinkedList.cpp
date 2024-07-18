@@ -66,7 +66,7 @@ void DoublyLinkedList::insertNode (int num) {
     Node * nodePtr = nullptr;
     nodePtr = head;
 
-    while (nodePtr->next && nodePtr->val < num) {
+    while (nodePtr && nodePtr->val < num) {
       nodePtr = nodePtr->next;
     }
 

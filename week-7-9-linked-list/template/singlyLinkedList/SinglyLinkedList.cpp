@@ -63,7 +63,7 @@ void SinglyLinkedList<T>::insertNode (T v) {
 
     nodePtr = head;
 
-    while (nodePtr->next && nodePtr->val < v) {
+    while (nodePtr && nodePtr->val < v) {
       prevNode = nodePtr;
       nodePtr = nodePtr->next;
     }

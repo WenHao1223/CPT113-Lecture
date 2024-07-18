@@ -72,7 +72,7 @@ void DoublyLinkedList<T>::insertNode (T num) {
 
   if (head) {
     nodePtr = head;
-    while (nodePtr->next && nodePtr->val < num)
+    while (nodePtr && nodePtr->val < num)
       nodePtr = nodePtr->next;
 
     if (nodePtr == head) {
